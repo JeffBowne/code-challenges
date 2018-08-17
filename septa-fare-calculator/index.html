@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>SEPTA Regional Rail Fare Calculator</title>
-</head>
-<body>
-	
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>SEPTA Regional Rail Fare Calculator</title>
+        <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+        <script src='fare-calculator.js'></script>
+    </head>
+    <body>
+
+        <form action="" id="fare-calc-form">
+
+            <select class="" name="" id="fare-calc-destination"></select>
+
+            <select class="" name="" id="fare-calc-ride-time"></select>
+
+            <input class="" type="radio" name="purchase-location" id="fare-calc-purchase-location"/>
+            <label class="" for="purchase-location"></label>
+
+            <input class="" id="fare-calc-ride-quantity" min="1" name="quantity" type="number" value="1" >
+
+        </form>
+
+        <div id="fare-calc-total">
+        </div>
+    </body>
 </html>
